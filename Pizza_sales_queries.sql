@@ -18,7 +18,7 @@ select count(distinct order_id) as total_orders from pizza_sales;
 # KPI-5. Avg pizas per order - calculated by dividing the total number of pizza sold by the total number of order
 select round((sum(quantity)/count(distinct order_id)),2) as avg_pizza_per_order from pizza_sales;
 
-# Charts Reqirement
+# Charts Requirement
 # 1. daily trend for total order
 SELECT
     dayname(order_date) AS order_day,
